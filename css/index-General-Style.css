@@ -1,0 +1,145 @@
+/* General */
+* {
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+.section-title {
+  /* text-transform: uppercase; */
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
+p {
+  color: var(--bs-gray-600);
+}
+
+/* Navbar */
+nav a i {
+  color: var(--bs-primary);
+  /* font-size: large; */
+}
+
+/* Icons */
+.icon {
+  color: var(--bs-primary);
+  /* font-size: large; */
+}
+
+.title-img i {
+  font-size: 50px;
+  color: var(--bs-gray-600);
+}
+
+.sothich-content i {
+  color: var(--bs-primary);
+  border-radius: 50%;
+  border: 1px solid var(--bs-primary);
+  padding: 1.2rem;
+  font-size: large;
+}
+
+#footer ul li i {
+  color: var(--bs-primary);
+  font-size: xx-large;
+}
+
+#footer ul li {
+  color: var(--bs-secondary);
+}
+
+/* Chia đôi targer and info */
+#target,
+#personal-info {
+  flex: 1;
+}
+
+.ic-strategy {
+  align-self: center;
+}
+
+/* List */
+#personal-info ul,
+#footer ul {
+  list-style-type: none;
+}
+
+.listStyleColor {
+  list-style: none;
+}
+
+.listStyleColor li::before {
+  content: "\2022";
+  color: var(--bs-primary);
+  font-weight: 100px;
+  font-size: 30px;
+  display: inline-block;
+  width: 0.75em;
+  margin-left: -1em;
+}
+
+/* set up chữ Hiện Tại của ô Kinh Nghiệm và "2021" du an CV */
+.present {
+  background-color: var(--bs-primary);
+  color: white;
+  border-radius: 10px;
+  padding: 3px 5px;
+}
+
+/* Span thể hiện level Ngôn ngũ, Kỹ Năng */
+.span0 {
+  width: 4rem;
+  height: 0.2rem;
+  border-radius: 0.1rem;
+  background-color: var(--bs-gray-500);
+}
+
+.Level1 .span1 {
+  background-color: var(--bs-primary);
+}
+
+.Level2 .span1,
+.Level2 .span2 {
+  background-color: var(--bs-primary);
+}
+
+.Level3 .span1,
+.Level3 .span2,
+.Level3 .span3 {
+  background-color: var(--bs-primary);
+}
+
+/* Table Du AN */
+.time-icon,
+.subject,
+table tr {
+  border: 1px solid var(--bs-gray-400);
+  padding: 1rem;
+}
+table tr td {
+  color: var(--bs-gray-600);
+  vertical-align: text-top;
+}
+
+/* hidden class */
+.hidden {
+  display: none;
+}
+
+/* hover info-tab */
+.btn-info {
+  border-radius: 10px;
+  border: none;
+  padding: 5px 10px;
+  background-color: var(--bs-warning);
+}
+.title-img:hover + .btn-info {
+  display: block;
+}
+.btn-info:hover {
+  display: block;
+}

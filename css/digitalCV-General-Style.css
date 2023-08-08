@@ -1,0 +1,58 @@
+h1 {
+  border-bottom: 1px solid var(--bs-gray-500);
+  padding-bottom: 1rem;
+}
+
+/* primary */
+.primary h3 {
+  border: 1px solid black;
+  border-radius: 50%;
+  color: white;
+  background-color: black;
+  width: 2rem;
+  text-align: center;
+}
+
+/* Timeline */
+.Goals,
+.Teams,
+.Scopes,
+.Primaries,
+.Timeline {
+  background-color: var(--bs-light);
+  padding: 1rem;
+}
+
+.Goal {
+  border-bottom: 1px solid var(--bs-gray-300);
+  padding-top: 1rem;
+}
+
+.project {
+  padding-top: 1rem;
+}
+
+.projectTime {
+  border-bottom: 1px dashed var(--bs-info);
+  padding-top: 1rem;
+}
+
+.projectNumber {
+  border: 3px solid var(--bs-warning-text-emphasis);
+  background-color: var(--bs-purple);
+  color: white;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  display: inline-block;
+}
+
+.projectNumber p {
+  padding: 4px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+i {
+  font-size: 2rem;
+}

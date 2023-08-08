@@ -1,0 +1,233 @@
+/* RESPONSIVE */
+
+/* LAPTOP */
+
+/* image */
+.image {
+  width: 100%;
+  /* height: 80vh; */
+  /* object-fit: cover; */
+}
+/* Image banner */
+.top-30 {
+  top: 50%;
+}
+
+/* navbar */
+.navigation {
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.navigation a:nth-child(2) {
+  margin-right: 3rem;
+}
+.navigation a:nth-child(3) {
+  margin-left: 3rem;
+}
+.navigation a {
+  border: 1px solid var(--bs-gray-400);
+}
+
+/* set up avatar chen vao Nav bar */
+.Navbar-avatar {
+  width: 100%;
+  text-align: center;
+  top: -75px;
+}
+
+#nav-bar img {
+  border: 10px solid white;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+/* set up grid cho Ô thông tin cá nhân: Kinh Nghiem, hoc vân... */
+#job-info .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  line-height: 1.5;
+}
+#job-info .container .tab-info {
+  padding: 20px;
+  border: 1px solid var(--bs-gray-400);
+}
+
+/* set up tab CHUNG CHI - GIAI THUONG */
+#certificate .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+#certificate h1,
+#certificate .center-line {
+  grid-column: 1/-1;
+}
+.cert-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  line-height: 1.5;
+  gap: 1rem;
+}
+.center-line {
+  height: 1px;
+  background-color: var(--bs-orange);
+}
+
+/* Set up .time-icon trong du an */
+.time-icon .item1 {
+  grid-area: area1;
+}
+.time-icon .item2 {
+  grid-area: area2;
+}
+.time-icon .item3 {
+  grid-area: area3;
+}
+.item1,
+.item2,
+.item3 {
+  margin: 0.25rem;
+}
+.time-icon {
+  display: grid;
+  grid-template-areas:
+    "area1 area2 area3"
+    "area1 area2 area3";
+  text-align: center;
+  align-content: center;
+}
+
+/* TABLET */
+@media screen and (max-width: 768px) {
+  /* image */
+  .image {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+  }
+  /* Image banner */
+  .top-30 {
+    top: 30%;
+  }
+
+  /* navbar */
+  .navigation {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+  .navigation a:nth-child(2),
+  .navigation a:nth-child(3) {
+    margin: 0;
+  }
+
+  .Navbar-avatar {
+    display: none;
+  }
+
+  .navigation a {
+    border: 1px solid var(--bs-gray-400);
+  }
+
+  /* set up grid cho Ô thông tin cá nhân: Kinh Nghiem, hoc vân... */
+  #job-info .container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Set up cho chứng chỉ và giải thưởng */
+  .cert-container {
+    grid-template-columns: 1fr;
+  }
+  .cert-container1 {
+    border-right: 1px solid var(--bs-orange);
+  }
+  .center-line {
+    height: 1px;
+    background-color: var(--bs-orange);
+    margin: 1rem;
+  }
+  /* Set up .time-icon trong du an */
+  .time-icon {
+    grid-template-areas:
+      "area1 area2 area2"
+      "area area3 area3";
+    text-align: left;
+  }
+  /* .item2,
+  .item3 {
+    text-align: left;
+  } */
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+  /* image */
+  .image {
+    width: 100%;
+    height: 120vh;
+    object-fit: cover;
+  }
+
+  /* Image banner */
+  .top-30 {
+    top: 30%;
+  }
+
+  /* navbar */
+  .navigation {
+    grid-template-columns: auto;
+    text-align: left;
+    margin-left: 20px;
+  }
+  .navigation a:nth-child(2),
+  .navigation a:nth-child(3) {
+    margin: 0;
+  }
+  .Navbar-avatar {
+    display: none;
+  }
+  .navigation a {
+    border: none;
+  }
+
+  /* sắp xếp dọc */
+  #about .container {
+    flex-direction: column;
+  }
+
+  /* set up grid cho Ô thông tin cá nhân: Kinh Nghiem, hoc vân... */
+  #job-info .container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Border cho chứng chỉ và giải thưởng */
+
+  #certificate .container {
+    grid-template-columns: 1fr;
+  }
+  .cert-container {
+    border: none;
+  }
+  .center-line {
+    display: none;
+  }
+  .cert-container1,
+  .cert-container2 {
+    border-bottom: 1px solid var(--bs-red);
+  }
+  #project .container {
+    flex-direction: column;
+  }
+  /* Set up .time-icon trong du an */
+  .time-icon {
+    grid-template-areas:
+      "area1"
+      "area2"
+      "area3";
+    text-align: left;
+  }
+}
